@@ -101,6 +101,11 @@ public class MenuP extends JFrameConFondo {
 
         jMenuItem12.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem12.setText("Buscar");
+        jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem12ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem12);
 
         jMenuBar1.add(jMenu1);
@@ -211,6 +216,12 @@ public class MenuP extends JFrameConFondo {
        rep.toFront();
     }                                          
 
+    private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        Buscar b = new Buscar();
+        b.setVisible(true);
+        b.toFront();
+    }                                           
+
     
     
     
@@ -274,3 +285,4 @@ public class MenuP extends JFrameConFondo {
     private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration                   
 }
+
